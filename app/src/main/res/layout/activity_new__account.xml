@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.atm_banking.New_Account">
+
+
+    <TextView
+        android:id="@+id/VwUN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TxtPhone"
+        android:layout_marginTop="11dp"
+        android:padding="8dp"
+        android:text="UserName : "
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/TxtUN"
+        android:layout_width="270dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/TxtPwd"
+        android:layout_alignRight="@+id/TxtPwd"
+        android:layout_alignTop="@+id/VwUN"
+        android:padding="8dp"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/TxtPwd"
+        android:layout_width="260dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/VwPwd"
+        android:layout_toEndOf="@+id/VwPwd"
+        android:layout_toRightOf="@+id/VwPwd"
+        android:padding="8dp"
+        android:inputType="textPassword"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/VwRePwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/VwPwd"
+        android:layout_alignStart="@+id/VwPwd"
+        android:layout_below="@+id/TxtPwd"
+        android:layout_marginTop="12dp"
+        android:padding="8dp"
+        android:text="Re-Paswword : "
+        android:textSize="18dp" />
+
+
+    <EditText
+        android:id="@+id/TxtRePwd"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/TxtPwd"
+        android:layout_alignRight="@+id/TxtPwd"
+        android:layout_alignTop="@+id/VwRePwd"
+        android:inputType="textPassword"
+        android:padding="8dp"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/VwPwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/VwUN"
+        android:layout_alignRight="@+id/VwUN"
+        android:layout_below="@+id/TxtMail"
+        android:layout_marginTop="15dp"
+        android:padding="8dp"
+        android:text="Paswword : "
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/TxtMail"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TxtPhone"
+        android:layout_alignStart="@+id/TxtPhone"
+        android:layout_alignTop="@+id/VwEmail"
+        android:padding="8dp"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/VwEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TxtUN"
+        android:layout_marginTop="12dp"
+        android:padding="8dp"
+        android:text="Email : "
+        android:textSize="18dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/VwName"
+        android:text="Name : "
+        android:textSize="18dp"
+        android:padding="8dp"
+        />
+
+    <EditText
+        android:id="@+id/TxtName"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:padding="8dp"
+        android:textSize="20dp" />
+
+
+    <TextView
+        android:id="@+id/VwPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TxtName"
+        android:layout_marginTop="15dp"
+        android:padding="8dp"
+        android:text="Phone : "
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/TxtPhone"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/TxtName"
+        android:layout_alignStart="@+id/TxtName"
+        android:layout_alignTop="@+id/VwPhone"
+        android:padding="8dp"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/BtnCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/TxtRePwd"
+        android:layout_marginTop="17dp"
+        android:background="@color/BtnLogin"
+        android:onClick="AddNewAccount"
+        android:text="Create Account"
+        android:textAllCaps="false" />
+</RelativeLayout>
